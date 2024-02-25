@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+body {
+  background-color: hsl(217, 54%, 11%);
+}
+.card {
+  background-color: hsl(216, 50%, 16%);
+  max-width: 270px;
+  width: 100%;
+  padding: 20px;
+  margin: 100px auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.card .img-box {
+  position: relative;
+}
+.card .img-box img {
+  width: 100%;
+  border-radius: 6px;
+}
+.card .img-box:hover .hover {
+  display: flex;
+}
+.card .img-box .hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(178, 100%, 50%, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+.card .img-box .hover img {
+  width: 35px;
+  height: 35px;
+}
+.card .card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.card .card-info .card-name {
+  color: hsl(0, 0%, 100%);
+}
+.card .card-info .card-name:hover {
+  color: hsl(178, 100%, 50%);
+}
+.card .card-info .text {
+  font-size: 12px;
+  color: hsl(215, 51%, 70%);
+  letter-spacing: 0.5px;
+}
+.card .card-info .detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .card-info .detail .eth,
+.days {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.card .card-info .detail .eth img,
+.days img {
+  width: 10px;
+  height: 12px;
+}
+.card .card-info .detail .eth p {
+  color: hsl(178, 100%, 50%);
+  font-size: 11px;
+  font-weight: 500;
+}
+.card .card-info .detail .days p {
+  color: hsl(215, 51%, 70%);
+  font-size: 11px;
+}
+hr {
+  border: 1px solid hsl(215, 51%, 70%);
+}
+.card .card-info .author {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.card .card-info .author img {
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.card .card-info .author p {
+  color: hsl(215, 51%, 70%);
+  font-size: 11px;
+}
+.card .card-info .author p span {
+  color: white;
+}
+.card .card-info .author p span:hover {
+  color: hsl(178, 100%, 50%);
+}
